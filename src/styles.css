@@ -17,7 +17,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-  font-weight: bold;
+  font-weight: 400;
 }
 
 h1 {
@@ -27,31 +27,59 @@ h1 {
   margin: 0;
 }
 
-header .quote {
-  text-align: center;
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  display: block;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+  list-style: inside;
 }
 
 .logo {
-  max-width: 150px;
-  display: inline;
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100px;
 }
 
 img {
   padding: 0;
   margin: 0;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+header {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: left;
   padding: 0;
-  margin-top: 0;
+  margin-left: 150px;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
   text-decoration: none;
   color: var(--primary-color);
   transition: all 150ms ease-in-out;
+  line-height: 1;
 }
 
 nav a:hover,
@@ -79,6 +107,7 @@ nav li {
   line-height: 27px;
   padding: 15px 30px;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 .button a {
@@ -105,4 +134,10 @@ nav li {
   background: var(--tertiary-color);
   text-align: center;
   padding: 160px 20px;
+  margin-top: 30px;
+}
+
+.about-content {
+  position: relative;
+  top: 100px;
 }
